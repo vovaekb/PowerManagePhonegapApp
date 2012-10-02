@@ -15,7 +15,7 @@ public class WakeLockPlugin extends Plugin {
 	public PluginResult execute(String action, JSONArray args, String callbackId) {
 		Log.v("Start"	, "Pugin");
 		PowerManager powerManager = (PowerManager)cordova.getActivity().getSystemService(Context.POWER_SERVICE);
-		final PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "WakeLockPlugin");
+		final PowerManager.WakeLock wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK, "WakeLockPlugin");
 		Log.v("WakeLock created"	, "Plugin");
 		//Turning off power management
 		if(action.equals("turn_off")){
