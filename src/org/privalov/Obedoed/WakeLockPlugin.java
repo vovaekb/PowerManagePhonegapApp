@@ -16,7 +16,6 @@ public class WakeLockPlugin extends Plugin {
 		final PowerManager.WakeLock wakeLock = powerManager.newWakeLock( 
 			PowerManager.SCREEN_BRIGHT_WAKE_LOCK, "SleepManager" );
 		if( action.equals( "PowerSave_off" ) ){
-//			wakeLock.acquire();
 			String result = "PowerSave off success";
         	Log.v("SleepManager", "PowerSave_off success");
         	Runnable newThread = new Runnable() {

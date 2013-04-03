@@ -1,0 +1,4 @@
+Powerful PhoneGap plugin for control power management system from Android application.
+Plugin implements two power management actions:
+1. Power save off - turning off power management (sets the mode to "keep the screen turned on").
+2. Power save on - turning on power management (remove mode "keep the screen turned on").
