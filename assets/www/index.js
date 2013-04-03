@@ -6,7 +6,7 @@
 			}, 
 			function( e ){
 				document.getElementById("status").innerHTML = "Error: " + e;
-			}, 'WakeLock', 'turn_on', []);
+			}, 'WakeLock', 'PowerSave_on', []);
 	}
 	
 	function turn_off(){
@@ -17,6 +17,6 @@
 			}, 
 			function( e ){
 				document.getElementById("status").innerHTML = "Error: " + e;
-			}, 'WakeLock', 'turn_off', []);
+			}, 'WakeLock', 'PowerSave_off', []);
 	}
 	
